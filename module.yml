@@ -1,0 +1,17 @@
+api: "1.0"
+name: "clock"
+display: Timer
+type: node
+script: ./server/index.js
+config:
+  - fields:
+    - name: clockFormat
+      display: Clock format
+      type: values
+      default: clock
+      values: [clock, seconds]
+    - name: precount
+      display: Seconds of countdown to match
+      type: integer
+      default: 5
+

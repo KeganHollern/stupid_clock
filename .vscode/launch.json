@@ -1,0 +1,24 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch Server",
+            "runtimeExecutable": "npm",
+            "runtimeArgs": ["run-script", "start:server"],
+            "skipFiles": ["<node_internals>/**"],
+            "outputCapture": "std"
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Debug devl",
+            "runtimeExecutable": "${workspaceFolder}/node_modules/.bin/devl",
+            "args": ["-p", "8080"],
+            "protocol": "inspector",
+            "stopOnEntry": true,
+            "outputCapture": "std"
+        }
+    ]
+}

@@ -1,0 +1,20 @@
+.controls-container {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 1rem;
+}
+
+.controls-container > .buttons {
+	width: 100%;
+}
+
+.controls-container .button {
+    color: black !important;
+    height: 7rem;
+    font-size: 3rem !important;
+    display: flex !important;
+    justify-content: center;
+    align-items: center;
+
+}
